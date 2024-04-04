@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+
+  <style>
+      /* Importing Font */
+    @font-face {
+      font-family: myfontInter;
+      src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+    }
+
+    :root{
+      --website-bg : #141414;
+      --card-bg-color : #1F1F1F;
+      --primary-text-color : #D9D9D9;
+      --secondary-text-color : #A3BE56; 
+    }
+     
+    *,*::after,*::before{
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: var(--website-bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      font-family: myfontInter;
+    }
+
+    .profile__card{
+      background-color: var(--card-bg-color);
+      width: 400px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .profile__pic img{
+      border-radius: 50%;
+      width: 72px;
+      height: 72px;
+      margin: 10px 0px;
+    }
+
+    .profile__info__wrapper{
+      text-align: center;
+    }
+    
+    .profile__name{
+      color: #D9D9D9;
+      font-size: 22px;
+      margin-top: 16px;
+    }
+
+    .profile__location{
+      color: var(--secondary-text-color);
+      margin-top: 8px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .profile__role{
+      color: #9B9B9B; 
+    }
+
+    .profile__social__wrapper{
+      margin: 24px 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social_btn{
+      display: inline-block;
+      padding: 14px 96px;
+      color: #D3D3D3;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 10px;
+      text-align: center;
+      background-color: #333333;
+      margin-bottom: 16px;
+    }
+
+     /* this for mobile Responsiveness  to Make it responsive As F**k */  
+    @media (max-width: 400px) {
+
+    .profile__card{
+      width: 300px;
+      margin: 16px;
+    }
+
+    .social_btn{
+      font-size: 14px!important;
+      padding: 12px 40px;
+    }
+
+    }
+
+    
+  </style>
+</head>
+<body>
+  
+  <!-- Profile Card-->
+  <div class="profile__card">
+
+      <!-- Profile Avatar-->
+    <div class="profile__pic">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="">
+    </div>
+      
+      <!--Profile Info Container-->
+    <div class="profile__info__wrapper">
+      <h3  class="profile__name">Jessica Randall</h3>
+      <h4 class="profile__location"> London, United Kingdom</h4>
+      <h5 class="profile__role"> "Front-end developer and avid reader."</h5>      
+    </div>
+
+      <!-- Profile Socal Button Container-->
+    <div class="profile__social__wrapper">
+      <div class="social_btn" id="github_btn">GitHub</div>
+      <div class="social_btn" id="github_btn">Frontend Mentor</div>
+      <div class="social_btn" id="github_btn"> LinkedIn</div>
+      <div class="social_btn" id="github_btn">Twitter</div>
+      <div class="social_btn" id="github_btn">Instagram </div>
+    </div>
+
+  </div>
+   <!-- Profile Card Ends Here -->
+
+</body>
+</html>
